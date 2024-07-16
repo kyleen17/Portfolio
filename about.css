@@ -1,0 +1,176 @@
+:root {
+    /* Color Variables */
+    --primary-color: #e68957;
+    --secondary-color: #d09ce7;
+    --tertiary-color: #eccfc0;
+    --font-color: #2b2b2b;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: var(--primary-color);
+    background-image: linear-gradient(to right, var(--tertiary-color), var(--primary-color));
+    margin: 10px 0;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    font-size: 1rem;
+    font-family: neuton;
+    width: 100%;
+}
+
+.navigation h2 {
+    color: white;
+    font-size: 30px;
+    font-family: homemade apple, cursive;
+}
+
+@media (max-width: 800px) {
+    .navigation {
+        font-size: 0.75rem;
+    }
+    .navigation h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .navigation h2 {
+        font-size: 0.75rem;
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    color: var(--font-color);
+    font-family: palanquin, sans-serif;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 10%;
+    
+}
+
+a {
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;
+}
+
+li a:hover {
+    background-color: #f0a278;
+    font-size: 1.5rem;
+}
+
+a:focus {
+    color: #eb484d;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 100px;
+}
+
+.box {
+    text-align: left;
+    padding: 50px 200px 50px 100px;
+}
+
+.box h1 {
+    font-size: 3rem;
+    font-family: homemade apple, cursive;
+}
+
+.box p {
+    font-size: 1rem;
+    font-family: palanquin, sans-serif;
+}
+.box2 img {
+    width: 75%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    padding: 50px 200px 50px 100px;
+}
+
+@media (max-width: 768px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0px;
+        padding: 10px;
+    }
+    }
+
+.education img {
+        width: 100%;
+    }
+
+footer {
+    background-color: white;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 1.75rem;
+    padding: 10px;
+    font-family: palanquin, sans-serif;
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10vw;
+    font-family: palanquin, sans-serif;
+    font-size: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #2b2b2b;
+        color: var(--secondary-color);
+    }
+    footer {
+        background-color: #2b2b2b;
+        color: var(--secondary-color);
+    }
+}
+@media (max-width: 768px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+        gap: 10px;
+        font-size: 0.75rem;
+    }
+    }
