@@ -240,13 +240,15 @@ a:focus {
 }
 
 .boxabout {
-    text-align: left;
-    padding: 50px 200px 50px 100px;
+    text-align: center;
+    padding: 50px 200px 50px 50px;
+    width: 50%;
 }
 
 .boxabout h1 {
     font-size: 3rem;
     font-family: homemade apple, cursive;
+    text-align: center;
 }
 
 .boxabout p {
@@ -273,6 +275,12 @@ a:focus {
         padding: 10px;
     }
     }
+
+@media (max-width: 400px) {
+    .boxabout h1 {
+        font-size: 2rem;
+    }
+}
 
 @media (prefers-color-scheme: dark) {
         .aboutbody {
