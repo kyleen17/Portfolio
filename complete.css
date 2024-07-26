@@ -575,6 +575,24 @@ button {
     
 }
 
+@media (max-width: 750px) {
+    .pinearticle {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin: 20px 0px;
+        text-align: center;
+    }
+    .pineappleimg {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin: 20px 0px;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
 .gallery1 {
     flex-direction: row;
     width: 50%;
