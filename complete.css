@@ -184,7 +184,7 @@ a:focus {
 
 .box2 .button {
     background-color: var(--secondary-color);
-    color: #000000;
+    color: var(--font-color);
     text-decoration: none;
     width: 150px;
     text-align: center;
@@ -218,7 +218,7 @@ a:focus {
 .box2 .button:hover {
     background-color: var(--tertiary-color);
     border: 2px black solid;
-    color: #000000;
+    color: var(--font-color);
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     text-decoration: none;
     transition-property: all;
@@ -264,7 +264,8 @@ a:focus {
 }
 
 .education img {
-    width: 100%;
+    margin: 10%;
+    width: 80%;
 }
 
 @media (max-width: 768px) {
@@ -274,18 +275,27 @@ a:focus {
         margin: 20px 0px;
         padding: 10px;
     }
+    .education img {
+        margin: 5%;
+        width: 90%;
     }
+
+}
 
 @media (max-width: 400px) {
     .boxabout h1 {
         font-size: 2rem;
+    }
+    .education img {
+        width: 100%;
+        margin: 0%;
     }
 }
 
 @media (prefers-color-scheme: dark) {
         .aboutbody {
             background-color: #2b2b2b;
-            color: var(--secondary-color);
+            color: white;
         }
 }
 
@@ -857,6 +867,7 @@ footer {
     background-color: white;
     text-align: center;
     color: var(--font-color);
+    margin: 0%;
 }
 
 footer h3 {
@@ -878,14 +889,15 @@ footer h3 {
 @media (prefers-color-scheme: dark) {
     .homebody {
         background-color: var (--font-color);
-        color: var(--secondary-color);
+        color: var(--tertiary-color);
+
     }
 
 
 
     footer {
         background-color: var(--font-color);
-        color: var(--secondary-color);
+        color: var(--tertiary-color);
     }
 }
 
